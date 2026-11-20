@@ -11,9 +11,6 @@ if (process.env.NODE_ENV === "production") {
 module.exports = {
   port: Number(process.env.PORT || 3000),
   mongoUri: process.env.MONGODB_URI,
-  corsOrigins: (process.env.CORS_ORIGINS || "http://localhost:3000")
-    .split(",")
-    .map((x) => x.trim()),
   accessSecret:
     process.env.JWT_ACCESS_SECRET || "development-access-secret-change-me",
   refreshSecret:

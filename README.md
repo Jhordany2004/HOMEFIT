@@ -15,8 +15,8 @@ El archivo `render.yaml` de la raíz configura un Web Service con `rootDir: Back
 `npm ci`, `npm start` y health check en `/salud`.
 
 1. Sube el repositorio a GitHub y crea el servicio desde **Blueprint** en Render.
-2. Define `MONGODB_URI`, `CORS_ORIGINS` (URL pública del frontend) y
-   `GEMINI_API_KEY`. Render genera los secretos JWT automáticamente.
+2. Define `MONGODB_URI` y `GEMINI_API_KEY`. Render genera los secretos JWT
+   automáticamente.
 3. En Atlas habilita acceso de red desde Render y despliega.
 4. Comprueba `https://TU-SERVICIO.onrender.com/salud`.
 
